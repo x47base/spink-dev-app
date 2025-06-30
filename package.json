@@ -2,8 +2,8 @@
   "name": "spink-dev",
   "version": "1.0.0",
   "scripts": {
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "start": "expo start",
     "prebuild": "expo prebuild",
     "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" && prettier -c \"**/*.{js,jsx,ts,tsx,json}\"",
@@ -17,6 +17,7 @@
     "class-variance-authority": "^0.7.1",
     "expo": "^53.0.13",
     "expo-constants": "~17.1.6",
+    "expo-dev-client": "~5.2.2",
     "expo-linking": "~7.1.5",
     "expo-navigation-bar": "^4.2.6",
     "expo-router": "~5.1.1",
