@@ -1,9 +1,10 @@
+import '../global.css';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, TextInput } from 'react-native';
 import { Link } from 'expo-router';
 import { Button } from 'components/nativewindui/Button';
 import { COLORS } from 'theme/colors';
-import '../global.css';
+import { Input } from '../components/ui/input';
 
 export default function Login() {
     return (
@@ -38,7 +39,7 @@ export default function Login() {
                     </View>
                 </Button>
             </View>
-            <Link href="/" className="mt-4 text-md text-black font-semibold">
+            <Link href="/" className="mt-8 text-center text-sm text-blue-600 font-medium">
                 Back to Home
             </Link>
             <StatusBar style="auto" />

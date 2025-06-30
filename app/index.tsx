@@ -1,3 +1,4 @@
+import '../global.css';
 import { ScreenContent } from 'components/ScreenContent';
 import { StatusBar } from 'expo-status-bar';
 import { Text, View, Image } from 'react-native';
@@ -5,17 +6,18 @@ import { Link } from 'expo-router';
 import { ActionSheetProvider } from '@expo/react-native-action-sheet';
 import { Button } from 'components/nativewindui/Button';
 import { COLORS } from 'theme/colors';
-import '../global.css';
 
 export default function App() {
   return (
     <>
       <View className="p-6 flex w-full h-1/2 self-center items-center position-relative ">
-        <Image
-          source={require('../assets/icon.png')}
-          className="w-36 h-36 rounded-xl"
-          resizeMode="contain"
-        />
+        <Link href="/center">
+          <Image
+            source={require('../assets/icon.png')}
+            className="w-36 h-36 rounded-xl"
+            resizeMode="contain"
+          />
+        </Link>
       </View>
       <View className="p-8 flex w-full h-1/2 self-center items-center position-relative">
         <Text className="font-extrabold text-4xl mb-8 mt-16">Spink Development</Text>

@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "spink-dev",
+    "scheme": "spinkdev",
     "slug": "spink-dev",
     "version": "1.0.0",
     "web": {
