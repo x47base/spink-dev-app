@@ -10,11 +10,11 @@ import { COLORS } from 'theme/colors';
 export default function App() {
   return (
     <>
-      <View className="p-6 flex w-full h-1/2 self-center items-center position-relative ">
+      <View className="p-6 flex w-full h-1/2 self-center items-center position-relative justify-center">
         <Link href="/center">
           <Image
             source={require('../assets/icon.png')}
-            className="w-36 h-36 rounded-xl"
+            className="w-36 h-36 rounded-full"
             resizeMode="contain"
           />
         </Link>
