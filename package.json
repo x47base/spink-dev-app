@@ -22,7 +22,7 @@
     "expo-router": "~5.1.1",
     "expo-status-bar": "~2.2.3",
     "nativewind": "latest",
-    "react": "19.0.0",
+    "react": "^19.1.0",
     "react-native": "0.79.4",
     "react-native-reanimated": "~3.17.4",
     "react-native-safe-area-context": "5.4.0",
@@ -32,16 +32,24 @@
     "undefined": "@react-native-async-storage/async-storage¨"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0",
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@babel/preset-typescript": "^7.27.1",
+    "@react-native-community/cli": "latest",
+    "@testing-library/react-native": "^13.2.0",
     "@types/react": "~19.0.10",
+    "babel-jest": "^30.0.2",
     "eslint": "^9.25.1",
     "eslint-config-expo": "^9.2.0",
     "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-testing-library": "^7.5.3",
+    "jest": "^30.0.3",
+    "jest-expo": "^53.0.7",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "tailwindcss": "^3.4.0",
-    "typescript": "~5.8.3",
-    "@react-native-community/cli": "latest"
+    "ts-jest": "^29.4.0",
+    "typescript": "~5.8.3"
   },
   "main": "expo-router/entry",
   "private": true
