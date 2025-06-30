@@ -34,9 +34,9 @@ export default function Counter() {
         })();
     }, [count]);
 
-    const counterUp = () => setCount((c) => c + 1);
-    const counterDown = () => setCount((c) => c - 1);
-    const resetCount = () => setCount(0);
+    const plusOne = () => setCount((c) => c + 1);
+    const minusOne = () => setCount((c) => c - 1);
+    const reset = () => setCount(0);
 
     return (
         <View className="flex-1 p-6 justify-center bg-gray-50">
@@ -45,15 +45,15 @@ export default function Counter() {
             </Text>
             <View className="w-full max-w-72 mx-auto p-6 space-y-6 gap-6">
                 <View className="flex-row justify-between items-center">
-                    <Button onPress={counterDown} className="px-5 py-3 bg-red-600 rounded-lg shadow">
+                    <Button onPress={minusOne} className="px-5 py-3 bg-red-600 rounded-lg shadow">
                         <Text className="text-white text-2xl font-bold">–</Text>
                     </Button>
                     <Text className="text-2xl font-semibold text-gray-700">{count}</Text>
-                    <Button onPress={counterUp} className="px-5 py-3 bg-green-600 rounded-lg shadow">
+                    <Button onPress={plusOne} className="px-5 py-3 bg-green-600 rounded-lg shadow">
                         <Text className="text-white text-2xl font-bold">＋</Text>
                     </Button>
                 </View>
-                <Button onPress={resetCount} className="w-full py-3 bg-blue-600 rounded-lg shadow">
+                <Button onPress={reset} className="w-full py-3 bg-blue-600 rounded-lg shadow">
                     <Text className="text-white text-lg font-medium text-center">
                         Zurücksetzen
                     </Text>
