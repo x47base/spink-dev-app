@@ -8,6 +8,7 @@ const links = [
     { name: 'Home', url: '/' },
     { name: 'Login', url: '/login' },
     { name: 'Counter', url: '/counter' },
+    { name: 'BMI', url: '/bmi' },
 ];
 
 export default function Counter() {
