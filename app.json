@@ -5,7 +5,7 @@
     "slug": "spink-dev",
     "version": "1.0.0",
     "web": {
-      "favicon": "./assets/favicon.ico"
+      "favicon": "./assets/favicon.png"
     },
     "experiments": {
       "tsconfigPaths": true
