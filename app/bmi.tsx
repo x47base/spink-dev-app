@@ -4,6 +4,7 @@ import { Text, View, TextInput } from 'react-native';
 import { Link } from 'expo-router';
 import { Button } from 'components/nativewindui/Button';
 import { useState, useEffect } from 'react';
+import BmiService from '../services/BmiService';
 
 export default function Counter() {
     const [showBMI, setShowBMI] = useState(false);
@@ -13,7 +14,7 @@ export default function Counter() {
 
     useEffect(() => {
         if (weight > 0 && height > 0) {
-            const bmi = (weight / ((height / 100) ** 2)).toFixed(2);
+            const bmi = BmiService.calculate(weight, height);
             setBmi(bmi);
         }
     }, [weight, height]);
